@@ -106,5 +106,5 @@ Follow AWS Elastic Beanstalk or EC2 setup guides to deploy your Django app effic
 
 ## 📩 Contact
 
-Telegram | [dogewhiz]\([https://t.me/dogewhiz](https://t.me/dogewhiz))
+Telegram | [dogewhiz][https://t.me/dogewhiz](https://t.me/dogewhiz)
 
