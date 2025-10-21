@@ -10,6 +10,4 @@ urlpatterns = [
     # Languages list endpoint
     path('languages/', LanguageList.as_view(), name='languages-list'),
 
-    # Ads list endpoint
-    path('ads/', AdList.as_view(), name='ads-list'),
 ]
