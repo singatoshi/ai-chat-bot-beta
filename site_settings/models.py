@@ -58,17 +58,3 @@ class PineconeIndex(models.Model):
     def __str__(self):
         return self.name
 
-
-class DefaultSettings(models.Model):
-    """
-    DefaultSettings model showing default settings.
-    """
-    language = models.ForeignKey(Language, on_delete=models.CASCADE)
-    site_setting = models.ForeignKey(SiteSetting, on_delete=models.CASCADE)
-    ad = models.ForeignKey(Ad, on_delete=models.CASCADE)
-
-    class Meta:
-        verbose_name_plural = "Default Settings"
-
-    def __str__(self):
-        return f"Default Settings"
