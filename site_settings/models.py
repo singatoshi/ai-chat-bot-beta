@@ -3,7 +3,7 @@ from django.db import models
 
 class Language(models.Model):
     """
-    Language model representing available languages.
+    Language model showing available languages.
     """
     name = models.CharField(max_length=100, unique=True)
     code = models.CharField(max_length=10, unique=True)
@@ -17,7 +17,7 @@ class Language(models.Model):
 
 class SiteSetting(models.Model):
     """
-    SiteSetting model representing website settings.
+    SiteSetting model showing website settings.
     """
     title = models.CharField(max_length=200)
     logo = models.ImageField(upload_to='site_logo/')
@@ -32,7 +32,7 @@ class SiteSetting(models.Model):
 
 class Ad(models.Model):
     """
-    Ad model representing advertisements.
+    Ad model showing advertisements.
     """
     title = models.CharField(max_length=200)
     description = models.TextField()
@@ -47,7 +47,7 @@ class Ad(models.Model):
 
 class PineconeIndex(models.Model):
     """
-    PineconeIndex model representing pinecone indexes.
+    PineconeIndex model showing pinecone indexes.
     """
     name = models.CharField(max_length=200)
     index_id = models.CharField(max_length=200)
@@ -61,7 +61,7 @@ class PineconeIndex(models.Model):
 
 class DefaultSettings(models.Model):
     """
-    DefaultSettings model representing default settings.
+    DefaultSettings model showing default settings.
     """
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
     site_setting = models.ForeignKey(SiteSetting, on_delete=models.CASCADE)
