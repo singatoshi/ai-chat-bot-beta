@@ -29,12 +29,4 @@ class AdAdmin(admin.ModelAdmin):
     search_fields = ('title', 'description',)
 
 
-@admin.register(PineconeIndex)
-class PineconeIndexAdmin(admin.ModelAdmin):
-    """
-    Admin site configuration for PineconeIndex model.
-    """
-    list_display = ('name', 'index_id',)
-    search_fields = ('name', 'index_id',)
-
 
