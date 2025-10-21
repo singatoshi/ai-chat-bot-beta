@@ -21,12 +21,3 @@ class SiteSettingSerializer(serializers.ModelSerializer):
         model = SiteSetting
         fields = ['title', 'logo']
 
-
-class AdSerializer(serializers.ModelSerializer):
-    """
-    Serializer for the Ad model.
-    """
-
-    class Meta:
-        model = Ad
-        fields = ['title', 'description', 'image']
