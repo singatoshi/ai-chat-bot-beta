@@ -92,12 +92,6 @@ python manage.py runserver
 
 You can deploy the chatbot easily on **Heroku** or **AWS**.
 
-### Deploy on Heroku
-
-```bash
-git push heroku main
-```
-
 ### Deploy on AWS
 
 Follow AWS Elastic Beanstalk or EC2 setup guides to deploy your Django app efficiently.
