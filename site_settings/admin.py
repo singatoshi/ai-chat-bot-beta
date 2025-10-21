@@ -38,10 +38,3 @@ class PineconeIndexAdmin(admin.ModelAdmin):
     search_fields = ('name', 'index_id',)
 
 
-@admin.register(DefaultSettings)
-class DefaultSettingsAdmin(admin.ModelAdmin):
-    """
-    Admin site configuration for DefaultSettings model.
-    """
-    list_display = ('language', 'site_setting', 'ad',)
-    search_fields = ('language', 'site_setting', 'ad',)
